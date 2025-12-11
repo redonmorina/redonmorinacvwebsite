@@ -3,7 +3,7 @@ import { CVData } from './types';
 // Replace this URL with the actual path to your uploaded image if hosting locally, 
 // or a hosted URL. Since I cannot access the uploaded file directly in code, 
 // I am using a placeholder that you should update.
-const PROFILE_IMAGE_URL = "./images/IMG_4781.jpg"; 
+const PROFILE_IMAGE_URL = "https://media.licdn.com/dms/image/v2/D4D03AQHgmqFxUZephw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725040503051?e=1767225600&v=beta&t=fILPgQyOfpRenclJe7ug5MT7GTy6csLM4trj9MCVvnE"; 
 // Second placeholder image for the About/Skills section
 const SECONDARY_IMAGE_URL = "./images/IMG_4782.jpg";
 
