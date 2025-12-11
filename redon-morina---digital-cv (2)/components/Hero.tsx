@@ -41,20 +41,20 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
             </h1>
         </div>
 
-        {/* Desktop Layout: Side-by-Side Composition (No Overlap) */}
-        <div className="hidden md:flex items-center justify-between w-full max-w-[95vw] xl:max-w-[90rem]">
-            {/* Typography Column - Adjusted margins to move slightly right */}
-            <div className="flex flex-col relative z-20 shrink-0 -ml-2 lg:-ml-12">
-               <h1 className="font-display font-black text-[11vw] xl:text-[10rem] leading-[0.8] tracking-tighter text-stone-900 select-none">
+        {/* Desktop Layout: Overlapping Composition */}
+        <div className="hidden md:flex items-center w-full max-w-[95vw] xl:max-w-[90rem]">
+            {/* Typography Column - Z-Index 30 to stay on top of image */}
+            <div className="flex flex-col relative z-30 shrink-0 -ml-2 lg:-ml-12 pointer-events-none mix-blend-hard-light">
+               <h1 className="font-display font-black text-[11vw] xl:text-[11rem] leading-[0.8] tracking-tighter text-stone-900 select-none">
                  REDON
                </h1>
-               <h1 className="font-display font-black text-[11vw] xl:text-[10rem] leading-[0.8] tracking-tighter text-stone-900 select-none pl-12 md:pl-24 text-stone-800">
+               <h1 className="font-display font-black text-[11vw] xl:text-[11rem] leading-[0.8] tracking-tighter text-stone-900 select-none pl-12 md:pl-24 text-stone-800">
                  MORINA
                </h1>
             </div>
 
-            {/* Image Column - Moved further left via margin-right */}
-            <div className="relative w-[28vw] max-w-md aspect-[3/4] z-10 mr-20 xl:mr-72 shrink-0">
+            {/* Image Column - Moved Left with negative margin to create overlap */}
+            <div className="relative w-[32vw] max-w-xl aspect-[3/4] z-10 -ml-[12vw] xl:-ml-[10rem] shrink-0 translate-y-8">
                  <div className="w-full h-full overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-700 ease-in-out shadow-2xl rotate-3 hover:rotate-0">
                     <img 
                         src={data.profileImage} 
