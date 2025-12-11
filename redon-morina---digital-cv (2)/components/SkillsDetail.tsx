@@ -14,7 +14,7 @@ export const SkillsDetail: React.FC<SkillsDetailProps> = ({ data }) => {
          <Section className="mb-12 md:mb-20">
             <div className="flex flex-col gap-6 justify-start">
                 <div className="w-full">
-                    <h1 className="font-display font-black uppercase text-[10vw] md:text-7xl text-stone-900 mb-4 leading-[0.85] tracking-tighter break-words hyphens-auto">
+                    <h1 className="font-display font-black uppercase text-[10vw] md:text-8xl text-stone-900 mb-4 leading-[0.85] tracking-tighter break-words hyphens-auto">
                         Skillset <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-purple to-accent-blue font-display">& Expertise</span>
                     </h1>
                     <p className="font-serif italic text-stone-500 text-lg md:text-xl mt-6 border-l-2 border-stone-900 pl-6 max-w-2xl">
