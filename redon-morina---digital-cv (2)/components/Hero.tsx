@@ -25,7 +25,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
         
         {/* Mobile Layout: Name (Top) - Image (Middle) - Name (Bottom) */}
         <div className="md:hidden flex flex-col items-center w-full gap-4 h-full justify-center">
-            <h1 className="font-display font-black text-[14vw] leading-[0.8] tracking-tighter text-stone-900 select-none text-center w-full">
+            <h1 className="font-display font-black text-[13vw] leading-[0.8] tracking-tighter text-stone-900 select-none text-center w-full">
               REDON
             </h1>
             
@@ -37,7 +37,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                 />
             </div>
 
-            <h1 className="font-display font-black text-[14vw] leading-[0.8] tracking-tighter text-stone-900 select-none text-center w-full">
+            <h1 className="font-display font-black text-[13vw] leading-[0.8] tracking-tighter text-stone-900 select-none text-center w-full">
               MORINA
             </h1>
         </div>
@@ -55,15 +55,14 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                </h1>
             </div>
 
-            {/* Image Column - Right side - No Animation */}
+            {/* Image Column - Right side - No Animation - Full Color */}
             <div className="relative w-[30vw] max-w-[26rem] aspect-[3/4] shrink-0 ml-auto mr-8 xl:mr-0 z-10">
-                 <div className="w-full h-full overflow-hidden rounded-sm grayscale shadow-2xl transform origin-center">
+                 <div className="w-full h-full overflow-hidden rounded-sm shadow-2xl transform origin-center">
                     <img 
                         src={data.profileImage} 
                         alt="Redon Morina"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-accent-blue/10 mix-blend-overlay"></div>
                  </div>
             </div>
         </div>
