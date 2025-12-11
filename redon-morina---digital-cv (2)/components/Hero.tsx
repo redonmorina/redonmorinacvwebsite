@@ -43,8 +43,8 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
 
         {/* Desktop Layout: Side-by-Side Composition (No Overlap) */}
         <div className="hidden md:flex items-center justify-between w-full max-w-[95vw] xl:max-w-[90rem]">
-            {/* Typography Column - Moved Left */}
-            <div className="flex flex-col relative z-20 shrink-0 -ml-6 lg:-ml-24">
+            {/* Typography Column - Adjusted margins to move slightly right */}
+            <div className="flex flex-col relative z-20 shrink-0 -ml-2 lg:-ml-12">
                <h1 className="font-display font-black text-[11vw] xl:text-[10rem] leading-[0.8] tracking-tighter text-stone-900 select-none">
                  REDON
                </h1>
