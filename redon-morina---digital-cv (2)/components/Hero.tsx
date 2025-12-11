@@ -25,7 +25,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
         
         {/* Mobile Layout: Name (Top) - Image (Middle) - Name (Bottom) */}
         <div className="md:hidden flex flex-col items-center w-full gap-4 h-full justify-center">
-            <h1 className="font-display font-black text-[13vw] leading-[0.8] tracking-tighter text-stone-900 select-none text-center w-full">
+            <h1 className="font-display font-black text-[13vw] leading-[0.8] tracking-tighter text-black select-none text-center w-full">
               REDON
             </h1>
             
@@ -37,7 +37,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                 />
             </div>
 
-            <h1 className="font-display font-black text-[13vw] leading-[0.8] tracking-tighter text-stone-900 select-none text-center w-full">
+            <h1 className="font-display font-black text-[13vw] leading-[0.8] tracking-tighter text-black select-none text-center w-full">
               MORINA
             </h1>
         </div>
@@ -46,11 +46,11 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
         <div className="hidden md:flex flex-row items-center justify-between w-full">
             
             {/* Typography Column - Left aligned */}
-            <div className="flex flex-col text-stone-900 shrink-0 mix-blend-difference z-30">
-               <h1 className="font-display font-black text-[10vw] xl:text-[9rem] leading-[0.85] tracking-tighter select-none opacity-85">
+            <div className="flex flex-col text-black shrink-0 z-30">
+               <h1 className="font-display font-black text-[10vw] xl:text-[9rem] leading-[0.85] tracking-tighter select-none">
                  REDON
                </h1>
-               <h1 className="font-display font-black text-[10vw] xl:text-[9rem] leading-[0.85] tracking-tighter select-none opacity-85">
+               <h1 className="font-display font-black text-[10vw] xl:text-[9rem] leading-[0.85] tracking-tighter select-none">
                  MORINA
                </h1>
             </div>
