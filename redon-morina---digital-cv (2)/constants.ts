@@ -3,9 +3,9 @@ import { CVData } from './types';
 // Replace this URL with the actual path to your uploaded image if hosting locally, 
 // or a hosted URL. Since I cannot access the uploaded file directly in code, 
 // I am using a placeholder that you should update.
-const PROFILE_IMAGE_URL = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80"; 
+const PROFILE_IMAGE_URL = "/IMG_4781.jpg"; 
 // Second placeholder image for the About/Skills section
-const SECONDARY_IMAGE_URL = "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?fit=crop&w=800&q=80";
+const SECONDARY_IMAGE_URL = "/IMG_4782.jpg";
 
 export const CV_DATA_DE: CVData = {
   name: "Redon Morina",
